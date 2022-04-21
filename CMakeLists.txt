@@ -3,4 +3,4 @@ project(proyecto_1_eif204)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(proyecto_1_eif204 main.cpp)
+add_executable(proyecto_1_eif204 main.cpp Object.h)
