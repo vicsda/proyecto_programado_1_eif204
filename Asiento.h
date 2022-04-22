@@ -7,7 +7,7 @@
 
 #include "Object.h"
 
-class Asiento {
+class Asiento : public Object {
 private:
     int numAsientos;
     bool disponibilidad;
