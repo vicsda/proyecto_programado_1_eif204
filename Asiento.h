@@ -17,9 +17,7 @@ public:
     void setNumAsientos(int numAsientos);
     bool isDisponibilidad() const;
     void setDisponibilidad(bool disponibilidad);
-
-     std::string toString();
-
+    std::string toString();
 };
 
 
