@@ -12,7 +12,7 @@ private:
     int numAsientos;
     bool disponibilidad;
 public:
-    Asiento(int numAsientos, bool disponibilidad);
+    Asiento(int numAsientos = 0, bool disponibilidad = false);
     int getNumAsientos() const;
     void setNumAsientos(int numAsientos);
     bool isDisponibilidad() const;
