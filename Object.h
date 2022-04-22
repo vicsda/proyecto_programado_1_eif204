@@ -5,6 +5,7 @@
 #ifndef PROYECTO_1_EIF204_OBJECT_H
 #define PROYECTO_1_EIF204_OBJECT_H
 #include <iostream>
+#include <sstream>
 
 class Object {
 public:
