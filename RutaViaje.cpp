@@ -5,23 +5,32 @@
 #include "RutaViaje.h"
 
 
-RutaViaje::RutaViaje(string nom){
-    nombreBus=nom;
-}
-RutaViaje::~RutaViaje(){
+RutaViaje::RutaViaje(const string &nombreRuta, Lista<Bus> *busAsignados) : nombreRuta(nombreRuta),
+                                                                             busAsignados(busAsignados) {}
 
-}
-
-string RutaViaje::toString(){
-    stringstream ss;
-    ss<<"Ruta INFO: "<<endl;
-    ss<<"Nombre BUS: "<<nombreBus<<endl;
-    return ss.str();
+const string &RutaViaje::getNombreRuta() const {
+    return nombreRuta;
 }
 
-string RutaViaje::getNombreBus(){
-    return nombreBus;
+void RutaViaje::setNombreRuta(const string &nombreRuta) {
+    RutaViaje::nombreRuta = nombreRuta;
 }
-void RutaViaje::setNombreBus(string nom){
-    nombreBus=nom;
+
+Lista<Bus> *RutaViaje::getBusAsignados() const {
+    return busAsignados;
 }
+
+void RutaViaje::setBusAsignados(Lista<Bus> *busAsignados) {
+    RutaViaje::busAsignados = busAsignados;
+}
+
+std::string RutaViaje::toString() {
+    std::stringstream s;
+    s<<"Ruta INFO: "<<endl;
+    s<<"Nombre de la Ruta: "<<getNombreRuta()<<std::endl;
+    s<<"---Buses para ruta---"<<std::endl;
+    s<<getBusAsignados()->toString();
+
+    return s.str();
+}
+

@@ -21,7 +21,7 @@ public:
     }
 
     tipo* getDatos() const{
-        return siguiente;
+        return datos;
     }
     void setDatos(tipo* datos){
         Nodo::datos=datos;

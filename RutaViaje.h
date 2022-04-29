@@ -5,24 +5,22 @@
 #ifndef PROYECTO_1_EIF204_RUTAVIAJE_H
 #define PROYECTO_1_EIF204_RUTAVIAJE_H
 
-#include<iostream>
-#include<sstream>
-using namespace std;
 #include "Object.h"
+#include "Bus.h"
+#include "Lista.h"
+
 class RutaViaje: public Object{
-
-
-public:
-    string nombreBus;
-
 private:
-    RutaViaje(string=" ");
-    ~RutaViaje();
-
+    string nombreRuta;
+    Lista<Bus> *busAsignados;
+public:
+    RutaViaje(const string &nombreRuta = "", Lista<Bus> *busAsignados = new Lista<Bus>());
+    const string &getNombreRuta() const;
+    void setNombreRuta(const string &nombreRuta);
+    Lista<Bus> *getBusAsignados() const;
+    void setBusAsignados(Lista<Bus> *busAsignados);
+    //Metodos
     string toString();
-
-    string getNombreBus();
-    void setNombreBus(string);
 
 
 };
