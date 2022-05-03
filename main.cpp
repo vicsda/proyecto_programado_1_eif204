@@ -1,6 +1,8 @@
 #include <iostream>
+#include "controlador/ControladorBus.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    ControladorBus* cont1 = new ControladorBus();
+    cont1->control0();
+    delete cont1;
 }

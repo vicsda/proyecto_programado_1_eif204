@@ -1,0 +1,3 @@
+C:/Users/David/proyecto#1_eif204/cmake-build-debug/CMakeFiles/proyecto_1_eif204.dir
+C:/Users/David/proyecto#1_eif204/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/David/proyecto#1_eif204/cmake-build-debug/CMakeFiles/rebuild_cache.dir

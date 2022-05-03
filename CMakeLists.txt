@@ -3,4 +3,4 @@ project(proyecto_1_eif204)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(proyecto_1_eif204 main.cpp Object.h Asiento.cpp Asiento.h Nodo.h Nodo.cpp cmake-build-debug/Nodo.cpp Nodo.cpp Lista.h Lista.cpp Bus.h Bus.cpp RutaViaje.h RutaViaje.cpp Tiquete.h Tiquete.cpp DatosBus.h DatosBus.cpp)
+add_executable(proyecto_1_eif204 main.cpp include/Object.h src/Asiento.cpp include/Asiento.h include/Nodo.h include/Lista.h include/Bus.h src/Bus.cpp include/RutaViaje.h include/Tiquete.h src/Tiquete.cpp include/DatosBus.h src/DatosBus.cpp include/Utilidades.h include/Arreglo.h src/RutaViaje.cpp include/Lista.h controlador/ControladorBus.cpp controlador/ControladorBus.h interfaz/VistaBus.cpp interfaz/VistaBus.h)
