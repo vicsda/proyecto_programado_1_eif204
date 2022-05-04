@@ -1,0 +1,14 @@
+//
+// Created by David on 5/3/2022.
+//
+
+#ifndef PROYECTO_1_EIF204_CONTROLADORRUTA_H
+#define PROYECTO_1_EIF204_CONTROLADORRUTA_H
+
+
+class ControladorRuta {
+
+};
+
+
+#endif //PROYECTO_1_EIF204_CONTROLADORRUTA_H
