@@ -46,3 +46,7 @@ Lista<Bus *> *RutaViaje::getBusAsignados() const {
 void RutaViaje::setBusAsignados(Lista<Bus *> *busAsignados) {
     RutaViaje::busAsignados = busAsignados;
 }
+
+bool RutaViaje::anadirBusEnRuta(Bus *nuevoBus) {
+    return busAsignados->agregarElemento(nuevoBus);
+}

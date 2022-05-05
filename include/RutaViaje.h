@@ -20,16 +20,13 @@ public:
     ~RutaViaje();
 
     const string &getId() const;
-
     void setId(const string &codRuta);
-
     const string &getNombreRuta() const;
-
     void setNombreRuta(const string &nombreRuta);
-
     Lista<Bus *> *getBusAsignados() const;
-
     void setBusAsignados(Lista<Bus *> *busAsignados);
+
+    bool anadirBusEnRuta(Bus* nuevoBus);
 
     //Metodos
     string toString();
